@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Menu</title>
+        <link rel="stylesheet" href="../CSS/styleMenu.css">
+        <script src="../JS/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"></script>
+    </head>
+    <body style="background-color: rgb(255, 255, 255);">
+        <!--Navigasi-->
+        <nav class="menu">
+            <center><label><img src="../Bahan/logo1.png" width="220px"></label></center>
+            <ul>
+                <li><a href="../HTML/Home.html" title="Login" target="_self">Logout</a></li>
+                <li><a href="../HTML/Menu.html" title="Menu" target="_self">Menu</a></li>
+                <li><a href="../HTML/Home2.html" title="Home" target="_self">Home</a></li>
+            </ul>
+        </nav>
+
+        <!--Isi-->
+        <div class="kontenmenu1">
+            <center>Silahkan Memilih Menu Anda </center>
+        </div>
+        <div class="kontenmenu2">
+            <button>Makanan</button>
+            <button>Minuman</button>
+            
+        </div>
+        <div class="kontenmenu3">
+            <div class="box" hidden>
+                <div class="boxflex"><a href="#" target="_self"><img src="../Bahan/food1.jpg" alt="Toasted Chicken"></a>
+                    Toasted Chicken<br>
+                    IDR 50.000
+                </div>
+                <div class="boxflex"><a href="#" target="_self"><img src="../Bahan/food2.jpg" alt="Chicken Soup"></a>
+                    Chicken Soup<br>
+                    IDR 20.000
+                </div>
+            </div>
+            <div class="box1" hidden> 
+                <div class="boxflex"><a href="#" target="_self"><img src="../Bahan/minuman1.jpg" alt="Dalgona Coffee"></a>
+                    Dalgona Coffee<br>
+                    IDR 15.000
+                </div>
+                <div class="boxflex"><a href="#" target="_self"><img src="../Bahan/minuman2.jpg" alt="Black Coffee"></a>
+                    Black Coffee<br>
+                    IDR 13.000
+                </div>
+            </div>
+        </div>
+            
+        <script>
+            $("button").click(function(){
+                $(".box").show(1000);
+            });
+        </script>
+        
+        <script>
+            $("button").click(function(){
+                $(".box1").show(1000);
+            });
+        </script>
+
+
+        <!--Footer-->
+        <footer>
+            Contact Us And Order<br>
+            <center>
+                    <table cellpadding=8 style="color: maroon;font-size: 12px;">
+                    <tr>
+                        <td><img src="../Bahan/wa.png" width="30px"></td>
+                        <td><img src="../Bahan/IG.png" width="30px"></td>
+                        <td><img src="../Bahan/Twt.png" width="30px"></td>
+                        <td><img src="../Bahan/yt.png" width="30px"></td>
+                        <td><img src="../Bahan/Fb.png" width="30px"></td>
+                    </tr> 
+                    </table> 
+            </center> 
+        </footer>
+
+    </body>
+</html>

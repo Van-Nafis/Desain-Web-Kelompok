@@ -1,0 +1,220 @@
+@font-face {
+    font-family: font;
+    src: url(../Font/Amanise.ttf);
+}
+
+@font-face {
+    font-family: fontA;
+    src: url(../Font/Corner.ttf);
+}
+
+@font-face {
+    font-family: fontB;
+    src: url(../Font/chrisMaster.ttf);
+}
+
+/*Navigasi*/
+.menu ul {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(150, 7, 7);
+    padding: 0%;
+    margin: auto;
+    list-style-type: none;
+    width: 100%;height: 50px;
+    font-size: 18px;
+    font-family: comic sans;
+}
+
+.menu label{
+    font-family: font;
+    color: rgb(255, 223, 44);
+    background-color: rgb(209, 137, 104);
+    float: left;
+    width: 100%;height: 40px;
+    margin:auto;
+    padding-top: 10px;
+}
+
+
+.menu ul li {
+    position: relative;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: arial;
+}
+
+.menu ul li img{
+    width: auto;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+.title{
+    background-color:rgb(255, 211, 211) ;
+    font-family: font;
+    color: maroon;background-size: cover;
+    font-size: 50px;padding: 0%;
+    position: relative;
+    text-align: center;margin: auto;
+}
+
+.konten{
+    margin: 0%;
+    padding: 0%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    background-image: url(../Bahan/back1.jpg);
+   }
+
+.kiri{
+    background: rgba(31, 30, 30, 0.5);
+    color: whitesmoke;
+    font-size:45px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+    width: 250px;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 10px;padding-bottom: 10px;
+    text-align: center;
+    font-family: font;
+    border-color: white;
+    border-style: solid;
+}
+.posttitle{
+    font-size: 18px;
+    font-family: consolas;
+    text-align: center;
+}
+
+.slider{
+    width: 900px;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+.slides{
+    width: 500%;
+    height: 350px;
+    display: flex;
+  }
+
+.slides input{
+    display: none;
+}
+  
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img{
+    width: 900px;
+    height: 350px;
+}
+  
+  /*Navigasi Slide Manual*/
+  
+.navigation-manual{
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.manual-btn:hover{
+    background: yellow;
+}
+  
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+  
+  /*Navigasi Slide Otomatis*/
+  
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 311px;
+  }
+  
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+  
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background:yellow;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: yellow;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: yellow;
+}
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: yellow;
+}
+
+/*Footer*/
+#Footer{
+    background-color: rgb(209, 137, 104);
+    width: 100%;height: 12%;
+    padding-top: 10px;
+    text-align: center;
+    font-family: fontA;
+    font-size: 15px;
+    color: maroon;
+}

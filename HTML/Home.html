@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>EnjoyResto.Id</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+  <body style="background-color: rgb(255, 255, 255);">
+    <!--Navigasi-->
+    <nav class="menu">
+        <center><label><img src="../Bahan/logo1.png" width="220px"></label></center>
+        <ul>
+            <li><a href="../login/Login.html" title="Login" target="_self">Login</a></li>
+            <li><button onClick="alert('Silahkan Login')" style="background-color: maroon;">
+              <a href="../login/Login.html" title="Menu" target="_self">Menu</a></li>
+            </button>
+            <li><a href="#" title="Home" target="_self">Home</a></li>
+        </ul>
+    </nav>
+   
+    <!--Konten -->
+    <div class="konten">
+        <div class="kiri">
+        Opening Hours<br>--------------<br>
+            <div class="posttitle">
+              <center> 
+              <table style="color: white;">
+                  <tr>
+                    <td>MON-FRI</td><td>9.00AM - 8.00PM</td>
+                  </tr>
+                  <tr>
+                    <td>SATURDAY</td><td>9.00AM - 9.00PM</td>
+                  </tr>
+                  <tr>
+                    <td>SUNDAY</td><td>9.00AM - 8.00PM</td>
+                  </tr>
+                </table>
+              </center> 
+            </div>
+            --------------<br>
+            "EnjoyResto.Id"
+        </div>
+        
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        
+        <div class="slide first">
+          <img src="../Bahan/bna.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Bahan/bn1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Bahan/bn2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Bahan/bn3.png" alt="">
+        </div>
+    
+        <!--Navigasi Otomatis-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        
+      </div>
+      <!--Navigasi Manual-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 3000);
+    </script>
+    </div>
+
+    
+    <div id="Footer">
+        Contact Us And Order<br>
+    <center>
+            <table cellpadding=8 style="color: maroon;font-size: 12px;">
+            <tr>
+                <td><img src="../Bahan/wa.png" width="30px"></td>
+                <td><img src="../Bahan/IG.png" width="30px"></td>
+                <td><img src="../Bahan/Twt.png" width="30px"></td>
+                <td><img src="../Bahan/yt.png" width="30px"></td>
+                <td><img src="../Bahan/Fb.png" width="30px"></td>
+            </tr> 
+            </table> 
+    </center> 
+    </div>
+    
+  </body>
+</html>
+      
